@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('http://www.birigui.sp.gov.br/birigui/imagens/bx_n2_n.jpg');
+    background-repeat: no-repeat;
+    background-image: 100% auto;
+    background-position: center 0px !important;
+}
+
+.line--header--green {
+    min-width: 975px;
+    max-width: 100%;
+    height: 15px;
+    background-color: green;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+    align-items: center;
+}
+
+.container--date {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+#date {
+    font-size: 14px;
+}
+
+.search {
+    margin-left: 10px;
+    position: relative;
+}
+
+.input--search {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.search--icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 34px;
+    border: 1px solid rgb(1, 146, 1);
+    background-color: rgb(1, 146, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+i {
+    color: #FFF;    
+}
+
+.text {
+    width: 50%;
+    padding: 75px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.text--initial {
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 975px;
+    margin: 0 auto;
+}
+
+.slider {
+    margin-top: 30px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    min-height: 137px;
+}
+
+.slider--width {
+    display: flex;
+    height: 350px;
+    transition: all ease .4s;
+}
+
+.slider--img {
+    width:100%;
+    height: inherit;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 975 / 350;
+}
+
+.img--controlls {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 145px;
+}
+
+.slider--controll {
+    font-size: 50px;
+    padding: 5px 18px;
+    background-color: rgba(2, 2, 2, 0.514);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(3, 145, 3);
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
+    margin-bottom: 10px;
+}
+
+.list--menu {
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.list--links {
+    display: flex;
+    line-height: 60px;
+    height: 60px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.links {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 11px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.secundary {
+    margin-top: 10px;
+    width: 975px;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+    min-height: 137px;
+}
+
+.secundary {
+    display: flex;
+    height: 255px;
+    transition: all ease .4s;
+}
+
+.secundary {
+    width: 975px;
+    height: inherit;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 975 / 255;
+}
+
+.sections {
+    width: 975px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.section--left {
+    flex: 1;
+    display: block;
+}
+
+.section--right {
+    width: 200px;
+    height: inherit;
+}
+
+.section--portals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.image--portal {
+    margin-top: 15px;
+    cursor: pointer;
+    width: 93%;
+}
+
+.image--portal:nth-child(1) {
+    margin-top: 0;
+}
+
+.section--container--slider--info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section--slider {
+    flex: 1;
+}
+
+.section--info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date--info {
+    display: block;
+}
+
+.date--container {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgba(99, 99, 99, 0.288);
+}
+
+.date--container:first-child {
+    margin-top: 0;
+}
+
+.title--info--date {
+    color: blue;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info--link {
+    color: #000;
+    font-size: 14px;
+}
+
+.info--link:hover {
+    text-decoration: underline;
+}
+
+.title--info--link {
+    font-weight: bold;
+}
+
+.title--info--description {
+    color: rgb(99, 99, 99);
+}
+
+.data--img:first-child {
+    margin-top: 10px;
+}
+
+.data--img {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.section--notices {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.title--notice {
+    margin-bottom: 20px;
+}
+
+.date--container--notice {
+    border-bottom: 1px dotted rgba(99, 99, 99, 0.288);
+    padding: 20px 10px;
+}
+
+.date--container--notice:nth-child(2n) {
+    background-color: rgba(187, 187, 255, 0.247);
+}
+
+.title--info--date--notice,
+.title--info--link--notice,
+.title--info--description--notice {
+    transition: all ease .2s;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.title--info--date--notice:hover,
+.title--info--link--notice:hover,
+.title--info--description--notice:hover {
+    cursor: pointer;
+    color: rgb(165, 4, 4);
+    text-decoration: underline;
+}
+
+
+.title--info--date--notice {
+    color: rgb(117, 117, 117);
+}
+
+.title--info--link--notice {
+    color: rgb(94, 77, 255);
+    font-size: 14px;
+}
+
+.title--info--description--notice {
+    color: rgb(117, 117, 117);
+}
+
+.section--search--info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+}
+
+.image--links--info {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.footer--logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+}
+
+.image--logo--footer {
+    cursor: pointer;
+}
+
+.title--footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(119, 119, 119) !important;
+    font-weight: bold;
+}
+
+.title--footer,
+.desc--title--footer,
+.endereco--title--footer,
+.cep--cnpj--title--footer,
+.tel--title--footer {
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+}
+
+.tel--title--footer {
+    margin-top: 15px;
+}
+
+
+.footer--links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 80px;
+    width: 65%;
+    background-color: #000 !important;
+}
+
+.list--links--footer {
+    background-color: rgb(238, 238, 238);
+    height: 100%;
+}
+
+.list--links--footer:nth-child(2n) {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+.list--links--footer:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon--face {
+    cursor: pointer;
+}
+
+.footer--links--footer {
+    padding: 25px 0 10px 20px;
+}
+
+.title--footer--links {
+    width: 100%;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 0 15px 0;
+    border-bottom: 1px dotted rgb(173, 173, 173);
+    margin-bottom: 10px;
+}
+
+.link--footer {
+    font-size: 12px;
+    color: rgb(95, 95, 95);
+}
+
+.footer--links--footer > li {
+    margin-top: 6px;
+}
+
+.link--footer:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

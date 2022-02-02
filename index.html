@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Birigui</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="http://www.birigui.sp.gov.br/birigui/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6256a870e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="line--header--green"></div>
+    <main class="main">       
+        <div class="header">
+            <div class="container--date">
+                <div class="date">
+                    <span id="date"></span>
+                </div>
+                <div class="search">
+                    <input type="text" class="input--search">
+                    <div class="search--icon"> 
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <h1 class="text--initial">O TRABALHO TUDO VENCE</h1>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="img--controlls">
+                <i class="slider--controll fas fa-angle-left" onclick="goPrev()"></i>
+                <i class="slider--controll fas fa-angle-right" onclick="goNext()"></i>
+            </div>
+            <div class="slider--width" id="image">
+                <div class="slider--img" style="background-image: url('/img/image-1.png');"></div>
+                <div class="slider--img" style="background-image: url('/img/image-2.png');"></div>
+                <div class="slider--img" style="background-image: url('/img/image-3.png');"></div>
+                <div class="slider--img" style="background-image: url('/img/image-4.gif');"></div>
+                <div class="slider--img" style="background-image: url('/img/image-5.png');"></div>
+                <div class="slider--img" style="background-image: url('/img/image-6.png');"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="list--menu">
+                <li class="list--links">
+                    <a href="#" class="links">HOME</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">EQUIPE DE GOVERNO</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">NOTÍCIAS</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">TRANSPARÊNCIA</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">LICITAÇÕES</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">TURISMO</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">CIDADE</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">CONCURSOS</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">LEGISLAÇÃO</a>
+                </li>
+                <li class="list--links">
+                    <a href="#" class="links">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slider secundary">
+            <div class="slider--width secundary" id="image secundary">
+                <div class="slider--img secundary" style="background-image: url('/img/dengue.gif');"></div>
+            </div>
+        </div>
+        <div class="sections">
+            <section class="section--left">
+                <div class="section--container--slider--info">
+                    <div class="section--slider">
+                        <h1 class="title--slider"></h1>
+                        <div class="section--slider--width">
+                            
+                        </div>
+                    </div>
+                    <div class="section--info">
+                        <div class="date--info">
+                            <div class="date--container">
+                                <span class="title--info--date">26/01 - </span>
+                                <a href="#" class="info--link">
+                                    <span class="title--info--link">Secretaria de Assistência Social</span><br />
+                                    <span class="title--info--description">
+                                        Conselho Municipal dos Direitos da Mulher de Birigui 
+                                        recebe inscrições para novos membros
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="date--container">
+                                <span class="title--info--date">27/09 - </span>
+                                <a href="#" class="info--link">
+                                    <span class="title--info--link">Secretaria de Negócios Jurídicos</span><br />
+                                    <span class="title--info--description">
+                                        Procon de Birigui atende munícipes das 8h às 15h, mediante agendamento prévio
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="date--container">
+                                <span class="title--info--date">12/08 - </span>
+                                <a href="#" class="info--link">
+                                    <span class="title--info--link">Secretaria de Planejamento e Finanças</span><br />
+                                    <span class="title--info--description">
+                                        Secretaria de Planejamento e Finanças informa o Valor da Terra Nua (VTN) em Birigui
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info--data--link">
+                            <img src="http://www.birigui.sp.gov.br/birigui/imagens/links/nota.png" alt="Botão Nota fiscal" class="data--img">
+                            <img src="http://www.birigui.sp.gov.br/birigui/imagens/links/transp.png" alt="Botão Tranparência Municipal" class="data--img">
+                            <img src="http://www.birigui.sp.gov.br/birigui/imagens/links/tel.png" alt="Botão Telefones Úteis" class="data--img">
+                        </div>
+                    </div>
+                </div>
+                <div class="section--notices">
+                    <h1 class="title--notice">Últimas notícias</h1>
+                    <div class="date--info--notice">
+                        <div class="date--container--notice">       
+                            <a class="title--info--date--notice">28/01</a>
+                            -
+                            <a class="title--info--link--notice">Secretaria de Desenvolvimento Econômico</a>
+                            -
+                            <a class="title--info--description--notice">
+                                Posto de Atendimento ao Trabalhador de Birigui divulga relação com 24 vagas de emprego
+                            </a>
+                        </div>
+                        <div class="date--container--notice">       
+                                <a class="title--info--date--notice">26/01</a>
+                                -
+                                <a class="title--info--link--notice">Secretaria de Assistência Social</a>
+                                -
+                                <a class="title--info--description--notice">
+                                    Conselho Municipal dos Direitos da Mulher de Birigui recebe inscrições para novos membros
+                                </a>
+                        </div>
+                        <div class="date--container--notice">
+                                <span class="title--info--date--notice">27/09</span>
+                                -
+                                <span class="title--info--link--notice">Secretaria de Negócios Jurídicos</span>
+                                -
+                                <span class="title--info--description--notice">
+                                    Procon de Birigui atende munícipes das 8h às 15h, mediante agendamento prévio
+                                </span>
+                        </div>
+                        <div class="date--container--notice">
+                                <span class="title--info--date--notice">12/08</span>
+                                -
+                                <span class="title--info--link--notice">Secretaria de Planejamento e Finanças</span>
+                                -
+                                <span class="title--info--description--notice">
+                                    Secretaria de Planejamento e Finanças informa o Valor da Terra Nua (VTN) em Birigui
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section--search--info" id="links">
+
+                </div>
+            </section>
+            <section class="section--right">
+                <div class="section--portals" id="portals">
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer--logo">
+                <img src="img/logo-rodape.png" alt="Logo Prefeitura" class="image--logo--footer">
+                <span class="title--footer">Prefeitura de Birigui</span>
+                <span class="desc--title--footer">Centro Administrativo Leonardo Sabioni</span>
+                <span class="endereco--title--footer">Rua Anhanguera, 1155 - Jardim Morumbi</span>
+                <span class="cep--cnpj--title--footer">CEP: 16200-067 - CNPJ - 46.151.718/0001-80</span>
+                <span class="tel--title--footer">(18) 3643-6000</span>
+            </div>
+            <div class="footer--links">
+                <div class="list--links--footer">
+                    <ul class="footer--links--footer">
+                        <h3 class="title--footer--links">Página Principal</h3>
+                        <li><a href="#" class="link--footer">Equipe de Governo</a></li>
+                        <li><a href="#" class="link--footer">Notícias</a></li>
+                        <li><a href="#" class="link--footer">Processos</a></li>
+                        <li><a href="#" class="link--footer">Licitações</a></li>
+                        <li><a href="#" class="link--footer">Cidade</a></li>
+                        <li><a href="#" class="link--footer">Concursos</a></li>
+                        <li><a href="#" class="link--footer">Legislação</a></li>
+                    </ul>
+                </div>
+                <div class="list--links--footer">
+                    <ul class="footer--links--footer">
+                        <h3 class="title--footer--links">Serviços</h3>
+                        <li><a href="#" class="link--footer">Transparência</a></li>
+                        <li><a href="#" class="link--footer">Serviços On-Line</a></li>
+                        <li><a href="#" class="link--footer">Contas Públicas</a></li>
+                        <li><a href="#" class="link--footer">Bombeiros</a></li>
+                        <li><a href="#" class="link--footer">Telefones Úteis</a></li>
+                        <li><a href="#" class="link--footer">Fale Conosco</a></li>
+                        <li><a href="#" class="link--footer">Webmail</a></li>
+                    </ul>
+                </div>
+                <div class="list--links--footer">
+                    <ul class="footer--links--footer">
+                        <h3 class="title--footer--links">Portal Prefeitura</h3>
+                        <li><a href="#" class="link--footer">Ouvidoria Online</a></li>
+                        <li><a href="#" class="link--footer">Galeria de FOtos</a></li>
+                        <li><a href="#" class="link--footer">Intranet</a></li>
+                        <li><a href="#" class="link--footer">Requerimento Web (Ponto Eletrônico)</a></li>
+                    </ul>
+                </div>
+                <div class="list--links--footer">
+                    <ul class="footer--links--footer">
+                        <li><img src="img/icon_face.png" alt="Facebook" class="icon--face" /></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="date.js"></script>
+    <script src="sliderImg.js"></script></script>
+    <script src="portalsImg.js"></script></script>
+    <script src="linksImg.js"></script></script>
+</body>
+
+</html>
